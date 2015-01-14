@@ -3,7 +3,8 @@ Creates a .ipa from a project without needing developer account credentials set 
 
 ### Instructions
 - Put script in same directory as `.xcodeproj`
-- Set developer certificate, provisioning profile, and bundle identifier in project settings
+- Set developer certificate, provisioning profile, and bundle identifier in target build settings
+- Create a new scheme named `BuildScheme` in Xcode
 - Run `bash enterprise-build.sh -a MyProject -p MyProvisioningProfileName`
 - `.ipa` will be generated as `builds/MyProject.ipa`
 
